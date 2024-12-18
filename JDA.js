@@ -6,24 +6,39 @@ let selected = null; // Initialize selected variable
 // Add dragstart event listener to each list item
 lists.forEach(list => {
     list.addEventListener("dragstart", function(e){
-        e.dataTransfer.setData("text/plain", null);
+        e.dataTransfer.setData("text", e.target.id); // Store the dragged item's ID
         selected = e.target;
+        e.target.classList.add('dragging'); // Add dragging class for visual feedback
+    });
+
+    list.addEventListener("dragend", function(e) {
+        e.target.classList.remove('dragging'); // Remove dragging class after the drag ends
     });
 });
 
 // Add dragover and drop event listeners to each container
 containers.forEach(container => {
     container.addEventListener("dragover", function(e){
-        e.preventDefault(); // Allow dropping
+        e.preventDefault(); // Allow dropping by preventing the default behavior
+        container.classList.add('drag-over'); // Add visual feedback on hover
     });
+
+    container.addEventListener("dragleave", function(e){
+        container.classList.remove('drag-over'); // Remove the hover effect when the dragged item leaves
+    });
+
     container.addEventListener("drop", function(e){
-        this.appendChild(selected); // Move the dragged item to the new container
+        e.preventDefault(); // Prevent default behavior for drop
+        container.classList.remove('drag-over'); // Remove the hover effect
+        if (selected && selected !== container) {
+            container.appendChild(selected); // Append the dragged item to the target container
+        }
     });
 });
 
 // Check the lists after drag and drop operation
 function checkLists() {
-    let settings = document.getElementById('Settings');
+    let settings = document.getElementById('settings');
     let settingLists = settings.querySelectorAll('.list');
     let password = Array.from(settingLists).find(list => list.textContent.includes('Password'));
     let sessionSettings = Array.from(settingLists).find(list => list.textContent.includes('Session Settings'));
