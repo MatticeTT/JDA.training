@@ -107,16 +107,18 @@ footer p {
     border: 2px solid #ddd; /* Border for visual separation */
     margin: 5px;
     border-radius: 5px;
+    position: relative; /* To position the list items correctly */
 }
 
 #jda. {
-    width: 80%; /* You can adjust this to fit your design */
+    width: 80%;
     margin: 20px auto; /* Center the last box */
     padding: 20px; /* Increase padding for more space around the content */
     border: 2px dashed #545960;
     background-color: #fff;
     text-align: center;
     min-height: 400px; /* Ensure it has enough height to contain all items */
+    position: relative;
 }
 
 .list {
@@ -124,12 +126,21 @@ footer p {
     align-items: center;
     margin: 10px 0;
     padding: 5px; /* Optional, for extra spacing inside each list item */
+    cursor: pointer; /* Change cursor to indicate that the item is draggable */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* A light background for the items */
 }
 
 .list img {
     width: 20px; /* Adjust image size */
     margin-right: 10px;
 }
+
+.box.drag-over {
+    background-color: #d1e7dd; /* Add a highlight effect when dragging over */
+}
+
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
