@@ -110,25 +110,26 @@ footer p {
 }
 
 #jda. {
-    width: 80%;
+    width: 80%; /* You can adjust this to fit your design */
     margin: 20px auto; /* Center the last box */
-    padding: 10px;
+    padding: 20px; /* Increase padding for more space around the content */
     border: 2px dashed #545960;
     background-color: #fff;
     text-align: center;
+    min-height: 400px; /* Ensure it has enough height to contain all items */
 }
 
 .list {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    padding: 5px; /* Optional, for extra spacing inside each list item */
 }
 
 .list img {
     width: 20px; /* Adjust image size */
     margin-right: 10px;
 }
-
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
