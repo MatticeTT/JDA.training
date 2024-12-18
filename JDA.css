@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* General Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
@@ -87,8 +85,87 @@ footer p {
     margin: 0;
 }
 
+/* New Drag-and-Drop Section Styling */
+section.container {
+    display: flex;
+    justify-content: space-between;  /* Ensure containers are spaced out evenly */
+    gap: 20px;  /* Adds space between the containers */
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+}
+
+section.container > div {
+    flex: 1;  /* Ensures each container takes equal space */
+    min-height: 350px;  /* Minimum height for each container */
+    background-color: #e0e0e0;  /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Individual Word Styling */
+.word {
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Styling for the Drag-and-Drop Items */
+.list {
+    background: #00B0F0;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: grab;
+    font-size: small;
+    padding-left: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.list:hover {
+    background-color: #0081bf;
+}
+
+.list img {
+    width: 12px;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F65C62;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #D20C14;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    section.container {
+        flex-direction: column; /* Stack the containers vertically on smaller screens */
+        align-items: center;
+    }
+
+    section.container > div {
+        width: 90%;  /* Adjust the width for smaller screens */
+        margin-bottom: 20px;  /* Add space between stacked containers */
+    }
+
     .button-container a.btn {
         width: auto;
         flex: 1;
