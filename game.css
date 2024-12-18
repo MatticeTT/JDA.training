@@ -46,7 +46,7 @@ main section img {
    flex-wrap: wrap;
 }
 .container > div {
-   width: 200px;
+   width: 150px;
    min-height: 180px;
    margin: 40px 15px;
    display: flex;
