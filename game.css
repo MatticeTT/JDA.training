@@ -71,17 +71,16 @@ main section img {
    background: #00B0F0;
    height: 20px;
    width: 100px;
-   margin: 10px 5px;
    color: #fff;
    display: flex;
    align-items: center;
    cursor: grab;
-   font-size: 10px;
+   font-size: 12px;
 }
 .list img {
    width: 5px;
-   margin-right: 15px;
-   margin-left: 20px;
+   margin-right: 5px;
+   margin-left: 5px;
 }
 button {
    margin-top: 20px;
