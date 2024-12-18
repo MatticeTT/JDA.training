@@ -10,6 +10,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
+    padding: 10px;
 }
 
 header .navbar-brand {
@@ -85,89 +86,54 @@ footer p {
     margin: 0;
 }
 
-/* New Drag-and-Drop Section Styling */
-section.container {
+/* New CSS for Drag-and-Drop Section */
+.game {
     display: flex;
-    justify-content: space-between;  /* Ensure containers are spaced out evenly */
-    gap: 20px;  /* Adds space between the containers */
-    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
-}
-
-section.container > div {
-    flex: 1;  /* Ensures each container takes equal space */
-    min-height: 350px;  /* Minimum height for each container */
-    background-color: #e0e0e0;  /* Light gray background */
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-/* Individual Word Styling */
-.word {
-    position: absolute;
-    top: -30px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-/* Styling for the Drag-and-Drop Items */
-.list {
-    background: #00B0F0;
-    height: 30px;
-    width: 100%;
-    margin: 10px 0;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: grab;
-    font-size: small;
-    padding-left: 10px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.list:hover {
-    background-color: #0081bf;
-}
-
-.list img {
-    width: 12px;
-    margin-right: 10px;
-}
-
-/* Button Styling */
-button {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #F65C62;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
 }
 
-button:hover {
-    background-color: #D20C14;
+.game > div {
+    flex: 1;
+    min-width: 200px; /* Make sure each section has a minimum width */
+    max-width: 300px; /* Control the max width of each container */
+    border: 2px solid #545960;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-/* Responsive Adjustments */
+.game .word {
+    font-weight: bold;
+    color: #333;
+}
+
+#jda. {
+    flex: 2; /* Allow jda section to take more space */
+    width: 80%;
+    height: 50px;
+    border: 2px dashed #545960;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
-    section.container {
-        flex-direction: column; /* Stack the containers vertically on smaller screens */
-        align-items: center;
+    .game {
+        flex-direction: column; /* Stack the sections vertically on small screens */
     }
 
-    section.container > div {
-        width: 90%;  /* Adjust the width for smaller screens */
-        margin-bottom: 20px;  /* Add space between stacked containers */
+    .game > div {
+        max-width: 100%; /* Allow containers to take full width on smaller screens */
+        margin-bottom: 15px;
     }
 
-    .button-container a.btn {
-        width: auto;
-        flex: 1;
+    #jda. {
+        width: 100%; /* Ensure jda section takes full width */
     }
 }
