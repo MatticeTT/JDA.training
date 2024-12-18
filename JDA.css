@@ -1,13 +1,10 @@
-/* General Reset and Body Styles */
-html, body {
-    height: 100%; /* Ensure the body takes the full viewport height */
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Enable Flexbox for vertical layout */
-}
+/* styles.css */
 
+/* General Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f2f2f2;
 }
 
@@ -22,15 +19,7 @@ header .navbar-brand {
     font-weight: bold;
 }
 
-/* Main Content Area */
-main {
-    flex: 1; /* Ensures the main content grows to fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically (optional) */
-    align-items: center; /* Center content horizontally */
-}
-
+/* Section Styling */
 main section {
     padding: 20px;
     margin: 20px auto;
@@ -88,13 +77,12 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    position: relative; /* Use relative positioning to avoid overlap issues */
+    position: relative; /* Use relative if content can grow */
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
 }
 
-/* Footer Text Styling */
 footer p {
     margin: 0;
 }
