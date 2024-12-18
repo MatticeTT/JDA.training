@@ -39,14 +39,24 @@ body {
 }
 .list {
     background: #00B0F0;
-    height: 20px;
-    width: 150px;
+    height: 30px; /* Increased height for better visibility */
+    width: 100%;
     margin: 10px 5px;
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     cursor: grab;
     font-size: small;
+    padding-left: 10px; /* Added padding */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s;
+}
+
+.list:hover {
+    background-color: #0081bf; /* Slight hover effect */
+}
+
 }
 .list img {
     width: 5px;
