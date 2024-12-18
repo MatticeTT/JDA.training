@@ -1,16 +1,14 @@
-/* styles.css */
-
 /* General Reset and Body Styles */
+html, body {
+    height: 100%; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Enable Flexbox for vertical layout */
+}
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f2f2f2;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Header Styling */
@@ -24,7 +22,15 @@ header .navbar-brand {
     font-weight: bold;
 }
 
-/* Section Styling */
+/* Main Content Area */
+main {
+    flex: 1; /* Ensures the main content grows to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically (optional) */
+    align-items: center; /* Center content horizontally */
+}
+
 main section {
     padding: 20px;
     margin: 20px auto;
@@ -33,10 +39,6 @@ main section {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 900px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically, optional */
 }
 
 main section h2 {
@@ -86,12 +88,13 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    position: relative; /* Use relative if content can grow */
+    position: relative; /* Use relative positioning to avoid overlap issues */
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
 }
 
+/* Footer Text Styling */
 footer p {
     margin: 0;
 }
