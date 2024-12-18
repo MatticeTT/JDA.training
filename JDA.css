@@ -1,85 +1,96 @@
-/* Original CSS */
+/* styles.css */
+
+/* General Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background: #fff;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.container > div {
-    width: 200px;
-    min-height: 200px;
-    margin: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    background-color: #545960;
-    position: relative;
-    flex-wrap: wrap;
-    padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-.word {
-    position: absolute;
-    top: -30px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.list {
-    background: #00B0F0;
-    height: 20px;
-    width: 150px;
-    margin: 10px 5px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: grab;
-    font-size: small;
-}
-.list img {
-    width: 5px;
-    margin-right: 15px;
-    margin-left: 20px;
-}
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #F65C62;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-button:hover {
-    background-color: #D20C14;
+    background-color: #f2f2f2;
 }
 
-/* Additional/Updated CSS for new section */
+/* Header Styling */
 header {
-    background-color: #343a40;
-    color: white;
+    background-color: #333;
+    color: #fff;
 }
-.navbar-nav .nav-link {
-    color: white;
+
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.navbar-nav .nav-link:hover {
-    color: #ff6347;
-}
-footer {
-    background-color: #343a40;
-    color: white;
+
+/* Section Styling */
+main section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+main section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+main section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-container a.btn {
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-container a.btn:hover {
+    background-color: #5a6268;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
     padding: 10px;
+    text-align: center;
+    position: relative; /* Use relative if content can grow */
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .button-container a.btn {
+        width: auto;
+        flex: 1;
+    }
 }
