@@ -137,10 +137,16 @@ footer p {
     margin-right: 10px;
 }
 
-.box.drag-over {
-    background-color: #d1e7dd; /* Add a highlight effect when dragging over */
+/* Visual feedback for dragging */
+.list.dragging {
+    opacity: 0.5; /* Make the dragged item semi-transparent */
 }
 
+/* Visual feedback when hovering over a container */
+.box.drag-over {
+    background-color: #f0f0f0; /* Light background on hover */
+    border: 2px solid #0066cc; /* Add a border to indicate where the item will go */
+}
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
