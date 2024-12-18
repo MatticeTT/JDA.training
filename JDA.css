@@ -6,6 +6,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 /* Header Styling */
