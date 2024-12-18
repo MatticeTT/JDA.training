@@ -117,3 +117,18 @@ button {
 button:hover {
    background-color: #D20C14;
 }
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .game {
+        flex-direction: column; /* Stack the sections vertically on small screens */
+    }
+
+    .game > div {
+        max-width: 100%; /* Allow containers to take full width on smaller screens */
+        margin-bottom: 15px;
+    }
+
+    #jda. {
+        width: 100%; /* Ensure jda section takes full width */
+    }
+}
