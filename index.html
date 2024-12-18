@@ -68,19 +68,19 @@
     <div class="container">
         <!-- First five boxes aligned next to each other -->
         <div class="row mb-3">
-            <div class="col-2 box" id="settings">
+            <div class="col-2 box" id="settings" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="word">Settings</p>
             </div>
-            <div class="col-2 box" id="Administration">
+            <div class="col-2 box" id="Administration" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="word">Administration</p>
             </div>
-            <div class="col-2 box" id="Operations">
+            <div class="col-2 box" id="Operations" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="word">Operations</p>
             </div>
-            <div class="col-2 box" id="Reports">
+            <div class="col-2 box" id="Reports" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="word">Reports</p>
             </div>
-            <div class="col-2 box" id="Data">
+            <div class="col-2 box" id="Data" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <p class="word">Data</p>
             </div>
         </div>
@@ -88,22 +88,45 @@
         <!-- The last box, jda, goes under the first five -->
         <div id="jda.">
             <p class="word">Data</p>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Password</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Session Settings</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Inventory</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Move Task</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Order</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Receiving</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Warehouse Map</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Reports Selection</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Algorithms</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> Archive</div>
-            <div class="list" draggable="true"><i class='bx bx-dots-vertical-rounded'></i> General</div>
+            <div class="list" id="list-1" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Password
+            </div>
+            <div class="list" id="list-2" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Session Settings
+            </div>
+            <div class="list" id="list-3" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Inventory
+            </div>
+            <div class="list" id="list-4" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Move Task
+            </div>
+            <div class="list" id="list-5" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Order
+            </div>
+            <div class="list" id="list-6" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Receiving
+            </div>
+            <div class="list" id="list-7" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Warehouse Map
+            </div>
+            <div class="list" id="list-8" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Reports Selection
+            </div>
+            <div class="list" id="list-9" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Algorithms
+            </div>
+            <div class="list" id="list-10" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> Archive
+            </div>
+            <div class="list" id="list-11" draggable="true" ondragstart="drag(event)">
+                <i class='bx bx-dots-vertical-rounded'></i> General
+            </div>
         </div>
         
         <button onclick="checkLists()">Finish</button>
     </div>
 </section>
+
 </main>
 
 <footer class="bg-dark text-white text-center py-3">
