@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-    text-align: center; /* Default text alignment for body */
 }
 
 /* Header Styling */
@@ -23,16 +22,14 @@ header .navbar-brand {
 /* Section Styling */
 main section {
     padding: 20px;
-    margin: 20px auto; /* Center section horizontally */
+    margin: 20px auto;
     background-color: #fff;
-    text-align: center; /* Center content inside the section */
+    text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 900px; /* Set a maximum width for sections */
-    display: block; /* Ensure sections take up their own space */
+    max-width: 900px;
 }
 
-/* Text Styling for Section */
 main section h2 {
     margin-bottom: 15px;
     color: #333;
@@ -43,7 +40,6 @@ main section p {
     color: #555;
 }
 
-/* Image Styling */
 main section img {
     max-width: 100%;
     height: auto;
@@ -54,9 +50,9 @@ main section img {
 /* Button Container Styling */
 .button-container {
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    gap: 10px; /* Add space between buttons */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .button-container a.btn {
