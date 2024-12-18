@@ -63,41 +63,47 @@
     </section>
 
     <!-- New Section (Drag and Drop Example) -->
-    <section class="game">
-        <h2>Drag and Drop Example</h2>
-        <div class="container">
-            <div id="settings" style="min-height: 300px;">
+<section class="game">
+    <h2>Drag and Drop Example</h2>
+    <div class="container">
+        <!-- First five boxes aligned next to each other -->
+        <div class="row mb-3">
+            <div class="col-2 box" id="settings">
                 <p class="word">Settings</p>
             </div>
-            <div id="Administration" style="min-height: 300px;">
+            <div class="col-2 box" id="Administration">
                 <p class="word">Administration</p>
             </div>
-            <div id="Operations" style="min-height: 300px;">
+            <div class="col-2 box" id="Operations">
                 <p class="word">Operations</p>
             </div>
-            <div id="Reports" style="min-height: 300px;">
+            <div class="col-2 box" id="Reports">
                 <p class="word">Reports</p>
             </div>
-            <div id="Data" style="min-height: 300px;">
+            <div class="col-2 box" id="Data">
                 <p class="word">Data</p>
             </div>
-            <div id="jda." style="width: 80%; height: 50px; border: 2px dashed #545960; background-color: #fff;">
-                <p class="word">Data</p>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Password"> Password</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Session Settings"> Session Settings</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Inventory"> Inventory</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Move Task"> Move Task</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Order"> Order</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Receiving"> Receiving</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Warehouse Map"> Warehouse Map</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Reports Selection"> Reports Selection</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Algorithms"> Algorithms</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Archive"> Archive</div>
-                <div class="list" draggable="true"><img src="path-to-your-image.png" alt="General"> General</div>
-            </div>
-            <button onclick="checkLists()">Finish</button>
         </div>
-    </section>
+        
+        <!-- The last box, jda, goes under the first five -->
+        <div id="jda." style="width: 80%; height: 50px; border: 2px dashed #545960; background-color: #fff;">
+            <p class="word">Data</p>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Password"> Password</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Session Settings"> Session Settings</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Inventory"> Inventory</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Move Task"> Move Task</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Order"> Order</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Receiving"> Receiving</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Warehouse Map"> Warehouse Map</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Reports Selection"> Reports Selection</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Algorithms"> Algorithms</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="Archive"> Archive</div>
+            <div class="list" draggable="true"><img src="path-to-your-image.png" alt="General"> General</div>
+        </div>
+        
+        <button onclick="checkLists()">Finish</button>
+    </div>
+</section>
 </main>
 
 <footer class="bg-dark text-white text-center py-3">
