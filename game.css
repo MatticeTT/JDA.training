@@ -75,7 +75,7 @@ main section img {
    display: flex;
    align-items: center;
    cursor: grab;
-   font-size: 12px;
+   font-size: 14px;
 }
 .list img {
    width: 5px;
