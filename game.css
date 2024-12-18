@@ -66,9 +66,9 @@ main section img {
    flex-wrap: wrap;
 }
 .container > div {
-   width: 150px;
-   min-height: 180px;
-   margin: 40px 15px;
+   width: 200px;
+   min-height: 200px;
+   margin: 50px 20px;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -90,12 +90,13 @@ main section img {
 .list {
    background: #00B0F0;
    height: 20px;
-   width: 100px;
+   width: 150px;
+   margin: 10px 5px;
    color: #fff;
    display: flex;
    align-items: center;
    cursor: grab;
-   font-size: 14px;
+   font-size: small;
 }
 .list img {
    width: 5px;
